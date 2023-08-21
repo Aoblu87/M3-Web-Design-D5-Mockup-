@@ -13,8 +13,8 @@
 <body class="bg-light" >
     <header>
         <!-------------------------- NAVBAR----------------------- -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#home"><img src="assets/logo.svg" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,16 +22,11 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                    
+                    <li class="dropdown">
+                        <a class="btn btn-white dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            Browse
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Action</a>
@@ -40,14 +35,46 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                    <li class="dropdown">
+                        <a class="btn btn-white dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Landings
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
+                    <li class="dropdown">
+                        <a class="btn btn-white dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="btn btn-white dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Accounts
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                   
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                    <button type="button" class="btn bg-secondary"><i class="bi bi-bell"></i></button>
+
             </div>
         </nav>
 
@@ -91,12 +118,12 @@
                 </div>
             </div>
 
-            <!-- Carousel -->
-            <div id="carouselExampleFade" class="carousel slide  " data-ride="carousel">
+            <!-- Carousel desktop-->
+            <div id="carouselExampleFade" class="carousel slide carousel(pause) d-none d-md-block " data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row row-cols-1 row-cols-md-4">
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-graphql.jpg" class="card-img-top" alt="Graph Ql">
                                     <div class="card-body">
@@ -110,7 +137,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-javascript.jpg" class="card-img-top" alt="Javascript">
                                     <div class="card-body">
@@ -124,7 +151,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-node.jpg" class="card-img-top" alt="NodeJS">
                                     <div class="card-body">
@@ -138,7 +165,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
                                     <div class="card-body">
@@ -157,7 +184,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row row-cols-1 row-cols-md-4">
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-angular.jpg" class="card-img-top" alt="Angular">
                                     <div class="card-body">
@@ -171,7 +198,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-python.jpg" class="card-img-top" alt="Python">
                                     <div class="card-body">
@@ -185,7 +212,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-css.jpg" class="card-img-top" alt="CSS">
                                     <div class="card-body">
@@ -199,7 +226,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-react.jpg" class="card-img-top" alt="React">
                                     <div class="card-body">
@@ -216,9 +243,9 @@
 
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row row-cols-1 row-cols-md-4">
-                            <div class="col mb-4">
+                    <div class="carousel-item ">
+                        <div class="row ">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-graphql.jpg" class="card-img-top" alt="Graph Ql">
                                     <div class="card-body">
@@ -232,7 +259,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-javascript.jpg" class="card-img-top" alt="Javascript">
                                     <div class="card-body">
@@ -246,7 +273,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
                                 <div class="card">
                                     <img src="assets/course-node.jpg" class="card-img-top" alt="NodeJS">
                                     <div class="card-body">
@@ -260,7 +287,128 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-4">
+                            <div class="col-6 col-md-3 mb-4">
+                                <div class="card">
+                                    <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleFade"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+
+            <!-- Carousel mobile-->
+            <div id="carouselExampleFade" class="carousel slide carousel(pause) d-md-none d-lg-none d-xl-none " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-4">
+                            
+                            
+                            <div class="col-6 mb-4">
+                                <div class="card">
+                                    <img src="assets/course-node.jpg" class="card-img-top" alt="NodeJS">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="card">
+                                    <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-4">
+                            
+                            
+                            <div class="col-6 mb-4">
+                                <div class="card">
+                                    <img src="assets/course-css.jpg" class="card-img-top" alt="CSS">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="card">
+                                    <img src="assets/course-react.jpg" class="card-img-top" alt="React">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row ">
+                            
+
+                            <div class="col-6 mb-4">
+                                <div class="card">
+                                    <img src="assets/course-node.jpg" class="card-img-top" alt="NodeJS">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
                                 <div class="card">
                                     <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
                                     <div class="card-body">
