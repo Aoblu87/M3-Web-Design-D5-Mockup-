@@ -1,0 +1,43 @@
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+.notification::before{
+    content:'';
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #7650FE;
+    border: solid 2px white;
+    
+}
+/* #nav{
+    position:relative ;
+} */
+
+#sign-in > img{
+    width: 4.1em;
+}
+
+/* #sign-in img::before{
+    content: "";
+    position: absolute;
+    top: 20%;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #19CB97;
+    border: solid 2px white;
+
+} */
+
+.jumbotron{
+    background-color:#7650FE ;
+
+}
