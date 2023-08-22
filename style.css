@@ -3,8 +3,8 @@
     src: url();
 } */
 
-.notification::before{
-    content:'';
+.notification::before {
+    content: '';
     display: block;
     position: absolute;
     top: 20px;
@@ -15,13 +15,14 @@
     border-radius: 50%;
     background-color: #7650FE;
     border: solid 2px white;
-    
+
 }
+
 /* #nav{
     position:relative ;
 } */
 
-#sign-in > img{
+#sign-in>img {
     width: 4.1em;
 }
 
@@ -37,7 +38,28 @@
 
 } */
 
-.jumbotron{
-    background-color:#7650FE ;
+.jumbotron {
+    background-color: #7650FE;
 
 }
+
+.jumbotron>.container>.row>.col h1 {
+    font-size: 2.2em;
+}
+
+.jumbotron>.container>.row>.col>.row>.col a {
+    font-size: 10pt;
+
+}
+
+.bi {
+
+    color: #C18165;
+    background-color: #FFEFD9;
+    
+}
+/* .list-group-item>.row>.col{
+    border-radius: 50%;
+    width: 2%;
+    height: 2%;
+} */
