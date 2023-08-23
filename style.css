@@ -64,13 +64,37 @@
     height: 2%;
 } */
 
+
+.average{
+    width: 10px;
+    height: 30px;
+    width: 10px;
+height: 30px;
+background-color: #7650FE;
+border-radius: 10px;
+}
+
 .average::before{
 content: '';
 position: absolute;
 width: 10px;
 height: 30px;
 background-color: #7650FE;
+border-radius: 10px;
 top: 3px;
 right: 30px;
 left: 4px;
+
 }
+.average::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: #7650FE;
+    border-radius: 10px;
+    top: 3px;
+    right: 50px;
+    left: 40px;
+    
+    }
