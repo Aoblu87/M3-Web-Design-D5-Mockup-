@@ -52,7 +52,7 @@
 
 }
 
-.bi {
+.list-group-item>.row>.col-2>.bi {
 
     color: #C18165;
     background-color: #FFEFD9;
@@ -63,3 +63,14 @@
     width: 2%;
     height: 2%;
 } */
+
+.average::before{
+content: '';
+position: absolute;
+width: 10px;
+height: 30px;
+background-color: #7650FE;
+top: 3px;
+right: 30px;
+left: 4px;
+}
