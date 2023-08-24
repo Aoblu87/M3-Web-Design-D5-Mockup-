@@ -63,6 +63,9 @@ nav>.row>.col button{
     background-color: #FFEFD9;
 
 }
+.card-footer{
+    border-radius: 0%;
+}
 
 /* .list-group-item>.row>.col{
     border-radius: 50%;
@@ -70,7 +73,15 @@ nav>.row>.col button{
     height: 2%;
 } */
 
+
+
+.card{
+    border-radius: 0.70 rem;
+}
+
 /* -------------------Average CARDS Pseudo elements */
+
+
 .advance {
 
     width: 3px;
