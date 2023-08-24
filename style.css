@@ -53,7 +53,7 @@
 } */
 
 /* -------------------Average CARDS Pseudo elements */
-.average {
+.advance {
 
     width: 3px;
     height: 12px;
@@ -68,19 +68,19 @@
 
 }
 
-.average::before {
+.advance::before {
     content: '';
     position: absolute;
     width: 3px;
-    height: 9px;
+    height: 8px;
     background-color: #7650FE;
     border-radius: 10px;
-    top: 3px;
+    top: 4px;
     left: -5px;
 
 }
 
-.average::after {
+.advance::after {
     content: '';
     position: absolute;
     width: 3px;
@@ -91,6 +91,84 @@
     left: 5px;
 
 }
+.intermediate {
+
+    width: 3px;
+    height: 12px;
+    background-color: #7650FE;
+    border-radius: 10px;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+
+
+
+
+}
+
+.intermediate::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background-color: #7650FE;
+    border-radius: 10px;
+    top: 4px;
+    left: -5px;
+
+}
+
+.intermediate::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 14px;
+    background-color: #AFAABE;
+    border-radius: 10px;
+    top: -2px;
+    left: 5px;
+
+}
+
+.beginner{
+
+    width: 3px;
+    height: 12px;
+    background-color: #AFAABE;
+    border-radius: 10px;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+
+
+
+
+}
+
+.beginner::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background-color: #7650FE;
+    border-radius: 10px;
+    top: 4px;
+    left: -5px;
+
+}
+
+.beginner::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 14px;
+    background-color: #AFAABE;
+    border-radius: 10px;
+    top: -2px;
+    left: 5px;
+
+}
+
 
 /*------------------ Carosello controls */
 
@@ -106,6 +184,6 @@
 .carousel-control-prev {
     top: 21px;
 
-    bottom: -1203px;
+    bottom: -1014px;
 
 }
