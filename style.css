@@ -3,27 +3,45 @@
     src: url();
 } */
 
+nav>.row>.col {
+display: flex;
+}
+
+nav>.row>.col button{
+    order: 3;
+}
+
+/* ----ICONA NOTIFICA E USER PSEUDO ELEMENTI */
 .notification::before {
     content: '';
-    display: block;
     position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    width: 2em;
-    height: 2em;
+    top: 3px;
+    left: 27px;
+    width: 0.7rem;
+    height: 0.7rem;
     border-radius: 50%;
     background-color: #7650FE;
     border: solid 2px white;
-
 }
 
 
-#sign-in>img {
+.user>img {
     width: 4.1em;
 }
 
+.user::after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 39px;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: #19CB97;
+    border: solid 2px white;
+}
 
+/* JUMBOTRON */
 
 .jumbotron {
     background-color: #7650FE;
@@ -91,6 +109,7 @@
     left: 5px;
 
 }
+
 .intermediate {
 
     width: 3px;
@@ -130,7 +149,7 @@
 
 }
 
-.beginner{
+.beginner {
 
     width: 3px;
     height: 12px;
