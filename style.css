@@ -56,13 +56,25 @@ nav>.row>.col button{
     font-size: 10pt;
 
 }
+/* LIST GROUP */
 
-.list-group-item>.row>.col-2>.bi {
 
-    color: #C18165;
+.icon-list{
     background-color: #FFEFD9;
+    color: #C18165;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
 
 }
+/* .icon-list svg{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+} */
+
+
+
 .card-footer{
     border-radius: 0%;
 }
@@ -217,3 +229,46 @@ nav>.row>.col button{
     bottom: -1014px;
 
 }
+
+
+/* ESERCIZI TRANSIZIONI */
+
+/* Esercizio !---------------------- */
+
+.arousel-inner{
+    overflow: visible;
+}
+.save:before{
+    content: url(assets/bookmark-fill.svg);
+    filter: invert(75%) sepia(7%) saturate(536%) hue-rotate(214deg) brightness(91%) contrast(84%);
+    position: absolute;
+    top: 15%;
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
+
+
+}
+.save:hover::before{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* ESERCIZIO 2 */
+
+.carousel-item .card{
+    transform: scale(1);
+    transition: transfor, 0.55s ease-in-out;
+}
+.carousel-item .card:hover{
+    transform: scale(1.05);
+    
+}
+
+.carousel-item{
+    z-index: 1;
+    transition: z-index 0.75s ease-in-out;
+}
+.carousel-item:hover{
+    z-index: 2;
+}
+
