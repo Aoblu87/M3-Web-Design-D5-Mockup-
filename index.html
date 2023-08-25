@@ -84,29 +84,52 @@
             </div>
             <div class="row align-items-center" style="position: relative;">
                 <div class="col-6 m-0 p-0 " style="order: 1;">
+                    <ul class="navbar-nav mr-auto flex-row align-items-center">
 
-                    <button type="button" class="notification btn btn-light rounded-circle"
-                        style="color: #AFAABE;"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-                            <path
-                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="col-6 m-0 p-0" style="order: 2;">
-                    <button class="user btn" type="button">
-                        <img class="rounded-circle" src="assets/avatar-1.jpg" alt="utente" style="width: 2.5em;">
-                    </button>
-                </div>
+                        <li class="dropdown">
+                            <a class="notification btn btn-light rounded-circle dropdown-toggle" href="#" role="button"
+                                data-toggle="dropdown" aria-expanded="false" style="color: #AFAABE;"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-bell" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                                </svg>
 
-            </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+
+
+                        <li class="dropdown">
+                            <a class="user btn rounded-circle dropdown-toggle" href="#" role="button"
+                                data-toggle="dropdown" aria-expanded="false">
+                                <img class="rounded-circle" src="assets/avatar-1.jpg" alt="utente"
+                                    style="width: 2.5em;">
+
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
         </nav>
 
     </header>
 
     <main>
         <!----------------------- JUMBOTRON----------------- -->
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col">
                 <div class="jumbotron jumbotron-fluid m-0 p-0">
                     <div class="container">
@@ -140,9 +163,9 @@
 
         <!------------------- LIST group--------------- -->
 
-       
 
-        <div class="row d-flex align-items-center bg-white border-bottom">
+
+        <div class="row d-flex align-items-center bg-white border-bottom no-gutters">
             <div class="col">
                 <ul class="list-group list-group-horizontal-md ">
                     <div class="container ">
@@ -150,11 +173,11 @@
 
                             <li class="col-4 d-flex justify-content-center list-group-item list-group-flush border-0 ">
                                 <div class="row ">
-        
-                                    
+
+
                                     <div class="icon-list col-0 px-3 m-2 ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                            class="bi bi-camera-video" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
                                                 d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z" />
                                         </svg>
@@ -162,16 +185,16 @@
                                     <div class="col">
                                         <p class="list-text display-5 m-0 p-0">30,000 online courses </p>
                                         <p class="text-muted m-0 p-0 ">Enjoy a variety of fresh topics</p>
-        
+
                                     </div>
                                 </div>
                             </li>
-        
+
                             <li class="col-4 d-flex justify-content-center list-group-item list-group-flush border-0">
                                 <div class="row">
                                     <div class="icon-list col-0 px-3 m-2" style="background-color: #FFEFD9;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                            class="bi bi-people" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
                                             <path
                                                 d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
                                         </svg>
@@ -179,24 +202,25 @@
                                     <div class="col">
                                         <p class="list-text display-5 m-0 p-0">Expert Instruction </p>
                                         <p class="text-muted m-0 p-0 ">Find the rigth instructor for you</p>
-        
+
                                     </div>
                                 </div>
                             </li>
                             <li class="col-4 d-flex justify-content-center list-group-item list-group-flush border-0">
                                 <div class="row">
                                     <div class="icon-list col-0 px-3 m-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                            class="bi bi-clock" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
                                             <path
                                                 d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
-                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                            <path
+                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                                         </svg>
                                     </div>
                                     <div class="col">
                                         <p class="list-text display-5 m-0 p-0">Lifetime access</p>
                                         <p class="text-muted m-0 p-0 ">Learn on your schedule</p>
-        
+
                                     </div>
                                 </div>
                             </li>
@@ -216,14 +240,14 @@
             </div>
 
             <!-- Carousel desktop-->
-            <div id="caroseulRecommended" class="carousel slide  d-none d-md-block " data-interval="false">
+            <div id="caroseulRecommended" class="carousel slide  " data-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row row-cols-1 row-cols-md-4">
 
 
                             <!---------------- CARD 1 GRAPHIC QI-->
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 mb-4">
                                 <div class="card">
                                     <img src="assets/course-graphql.jpg" class="card-img-top" alt="Graph Ql">
                                     <div class="card-body pb-0">
@@ -308,11 +332,12 @@
 
                                                     <p class="p-0 m-0">Brooblyn Simmons</p>
                                                 </div>
-                                                <div class="save col-1 p-0" style="color: #AFAABE;">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                <div class="save col-1 p-0" data-target="favorites" style="color: #AFAABE;">
+
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
-                                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
                                                     </svg>
 
                                                 </div>
@@ -329,7 +354,7 @@
 
 
 
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 mb-4">
                                 <div class="card">
                                     <img src="assets/course-javascript.jpg" class="card-img-top" alt="javascript">
                                     <div class="card-body pb-0">
@@ -414,7 +439,7 @@
 
                                                     <p class="p-0 m-0">Jenny Wilson</p>
                                                 </div>
-                                                <div class="save col-1 p-0" style="color: #AFAABE;">
+                                                <div class="save col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -430,7 +455,7 @@
 
                             <!---------------- CARD 3 NODE JS-->
 
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 d-xs-none d-sm-none d-md-block mb-4">
                                 <div class="card">
                                     <img src="assets/course-node.jpg" class="card-img-top" alt="Node JS">
                                     <div class="card-body pb-0">
@@ -515,7 +540,7 @@
 
                                                     <p class="p-0 m-0">Sina Ray</p>
                                                 </div>
-                                                <div class="save col-1 p-0" style="color: #AFAABE;">
+                                                <div class="save col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -530,7 +555,7 @@
                             </div>
                             <!---------------- CARD 4   LARAVEL -->
 
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col d-xs-none d-sm-none d-md-block mb-4">
                                 <div class="card">
                                     <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
                                     <div class="card-body pb-0">
@@ -616,7 +641,7 @@
 
                                                     <p class="p-0 m-0">Sobo Rikhan</p>
                                                 </div>
-                                                <div class="save col-1 p-0" style="color: #AFAABE;">
+                                                <div class="save col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -637,7 +662,7 @@
 
                         <div class="row row-cols-1 row-cols-md-4">
                             <!-- ----------------CARD 5 HTML -->
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 mb-4">
                                 <div class="card">
                                     <img src="assets/course-html.jpg" class="card-img-top" alt="HTML">
                                     <div class="card-body pb-0">
@@ -723,7 +748,7 @@
 
                                                     <p class="p-0 m-0">Miston Wilson</p>
                                                 </div>
-                                                <div class="save col-1 p-0" style="color: #AFAABE;">
+                                                <div class="save col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -823,7 +848,7 @@
 
                                                     <p class="p-0 m-0">Jenny Wilson</p>
                                                 </div>
-                                                <div class="save col-1 p-0" style="color: #AFAABE;">
+                                                <div class="save col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -837,7 +862,7 @@
                                 </div>
                             </div>
                             <!-- CARD NODE -->
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 d-xs-none d-sm-none d-md-block  mb-4">
                                 <div class="card">
                                     <img src="assets/course-node.jpg" class="card-img-top" alt="Node JS">
                                     <div class="card-body pb-0">
@@ -922,7 +947,7 @@
 
                                                     <p class="p-0 m-0">Sina Ray</p>
                                                 </div>
-                                                <div class="save col-1 p-0" style="color: #AFAABE;">
+                                                <div class="save col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -936,7 +961,7 @@
                                 </div>
                             </div>
                             <!-- CARD REACT -->
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 d-xs-none d-sm-none d-md-block mb-4">
                                 <div class="card">
                                     <img src="assets/course-react.jpg" class="card-img-top" alt="React">
                                     <div class="card-body pb-0">
@@ -1022,7 +1047,7 @@
 
                                                     <p class="p-0 m-0">April Noms</p>
                                                 </div>
-                                                <div class="save col-1 p-0" style="color: #AFAABE;">
+                                                <div class="save col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -1050,131 +1075,9 @@
                 <span class="sr-only">Next</span>
             </button>
 
-
-
-
-            <!-- Carousel mobile-->
-            <div id="caroseulRecommended" class="carousel slide carousel(pause) d-md-none d-lg-none d-xl-none "
-                data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row row-cols-1 row-cols-md-4">
-
-
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-node.jpg" class="card-img-top" alt="NodeJS">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row row-cols-1 row-cols-md-4">
-
-
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-css.jpg" class="card-img-top" alt="CSS">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-react.jpg" class="card-img-top" alt="React">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="row ">
-
-
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-node.jpg" class="card-img-top" alt="NodeJS">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-target="#caroseulRecommended"
-                    data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#caroseulRecommended"
-                    data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </button>
-            </div>
         </div>
+
+
 
 
 
@@ -1191,14 +1094,14 @@
             </div>
 
             <!-- Carousel desktop-->
-            <div id="caroseulPopular" class="carousel slide  d-none d-md-block " data-interval="false">
+            <div id="caroseulPopular" class="carousel slide  " data-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row row-cols-1 row-cols-md-4">
 
 
                             <!---------------- CARD 1 GRAPHIC QI-->
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6  mb-4">
                                 <div class="card">
                                     <img src="assets/course-graphql.jpg" class="card-img-top" alt="Graph Ql">
                                     <div class="card-body pb-0">
@@ -1283,7 +1186,7 @@
 
                                                     <p class="p-0 m-0">Brooblyn Simmons</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -1303,7 +1206,7 @@
 
 
 
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6  mb-4">
                                 <div class="card">
                                     <img src="assets/course-javascript.jpg" class="card-img-top" alt="javascript">
                                     <div class="card-body pb-0">
@@ -1388,7 +1291,7 @@
 
                                                     <p class="p-0 m-0">Jenny Wilson</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -1404,7 +1307,7 @@
 
                             <!---------------- CARD 3 NODE JS-->
 
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 d-xs-none d-sm-none d-md-block mb-4">
                                 <div class="card">
                                     <img src="assets/course-node.jpg" class="card-img-top" alt="Node JS">
                                     <div class="card-body pb-0">
@@ -1489,7 +1392,7 @@
 
                                                     <p class="p-0 m-0">Sina Ray</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -1504,7 +1407,7 @@
                             </div>
                             <!---------------- CARD 4   LARAVEL -->
 
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 d-xs-none d-sm-none d-md-block mb-4">
                                 <div class="card">
                                     <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
                                     <div class="card-body pb-0">
@@ -1590,7 +1493,7 @@
 
                                                     <p class="p-0 m-0">Sobo Rikhan</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -1697,7 +1600,7 @@
 
                                                     <p class="p-0 m-0">Miston Wilson</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -1797,7 +1700,7 @@
 
                                                     <p class="p-0 m-0">Jenny Wilson</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -1811,7 +1714,7 @@
                                 </div>
                             </div>
                             <!-- CARD NODE -->
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 d-xs-none d-sm-none d-md-block  mb-4">
                                 <div class="card">
                                     <img src="assets/course-node.jpg" class="card-img-top" alt="Node JS">
                                     <div class="card-body pb-0">
@@ -1896,7 +1799,7 @@
 
                                                     <p class="p-0 m-0">Sina Ray</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -1910,7 +1813,7 @@
                                 </div>
                             </div>
                             <!-- CARD REACT -->
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 d-xs-none d-sm-none d-md-block mb-4">
                                 <div class="card">
                                     <img src="assets/course-react.jpg" class="card-img-top" alt="React">
                                     <div class="card-body pb-0">
@@ -1996,7 +1899,7 @@
 
                                                     <p class="p-0 m-0">April Noms</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -2023,127 +1926,9 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </button>
-
-            <!-- Carousel mobile-->
-            <div id="caroseulPopular" class="carousel slide carousel(pause) d-md-none d-lg-none d-xl-none "
-                data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row row-cols-1 row-cols-md-4">
-
-
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-node.jpg" class="card-img-top" alt="NodeJS">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row row-cols-1 row-cols-md-4">
-
-
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-css.jpg" class="card-img-top" alt="CSS">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-react.jpg" class="card-img-top" alt="React">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="row ">
-
-
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-node.jpg" class="card-img-top" alt="NodeJS">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-target="#caroseulPopular" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#caroseulPopular" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </button>
-            </div>
         </div>
+
+
 
 
 
@@ -2160,7 +1945,7 @@
             </div>
 
             <!-- Carousel desktop-->
-            <div id="caroseulTrending" class="carousel slide  d-none d-md-block " data-interval="false">
+            <div id="caroseulTrending" class="carousel slide   " data-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row row-cols-1 row-cols-md-4">
@@ -2252,7 +2037,7 @@
 
                                                     <p class="p-0 m-0">Jenny Wilson</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -2357,7 +2142,7 @@
 
                                                     <p class="p-0 m-0">Jenny Wilson</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -2373,7 +2158,7 @@
 
                             <!---------------- CARD 3 NODE JS-->
 
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 col-md-3 d-xs-none d-sm-none d-md-none mb-4">
                                 <div class="card">
                                     <img src="assets/course-node.jpg" class="card-img-top" alt="Node JS">
                                     <div class="card-body pb-0">
@@ -2458,7 +2243,7 @@
 
                                                     <p class="p-0 m-0">Sina Ray</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -2473,7 +2258,7 @@
                             </div>
                             <!---------------- CARD 4   LARAVEL -->
 
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 col-md-3 d-xs-none d-sm-none d-md-block mb-4">
                                 <div class="card">
                                     <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
                                     <div class="card-body pb-0">
@@ -2559,7 +2344,7 @@
 
                                                     <p class="p-0 m-0">Sobo Rikhan</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -2666,7 +2451,7 @@
 
                                                     <p class="p-0 m-0">Miston Wilson</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -2766,7 +2551,7 @@
 
                                                     <p class="p-0 m-0">Jenny Wilson</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -2780,7 +2565,7 @@
                                 </div>
                             </div>
                             <!-- CARD NODE -->
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 col-md-3 d-xs-none d-sm-none d-md-block mb-4">
                                 <div class="card">
                                     <img src="assets/course-node.jpg" class="card-img-top" alt="Node JS">
                                     <div class="card-body pb-0">
@@ -2865,7 +2650,7 @@
 
                                                     <p class="p-0 m-0">Sina Ray</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -2879,7 +2664,7 @@
                                 </div>
                             </div>
                             <!-- CARD REACT -->
-                            <div class="col-6 col-md-3 mb-4">
+                            <div class="col-6 col-md-3 d-xs-none d-sm-none d-md-block mb-4">
                                 <div class="card">
                                     <img src="assets/course-react.jpg" class="card-img-top" alt="React">
                                     <div class="card-body pb-0">
@@ -2965,7 +2750,7 @@
 
                                                     <p class="p-0 m-0">April Noms</p>
                                                 </div>
-                                                <div class="col-1 p-0" style="color: #AFAABE;">
+                                                <div class="col-1 p-0" data-target="favorites" style="color: #AFAABE;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                         fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                                                         <path
@@ -2994,125 +2779,7 @@
             </button>
 
 
-            <!-- Carousel mobile-->
-            <div id="caroseulTrending" class="carousel slide carousel(pause) d-md-none d-lg-none d-xl-none "
-                data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row row-cols-1 row-cols-md-4">
 
-
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-node.jpg" class="card-img-top" alt="NodeJS">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row row-cols-1 row-cols-md-4">
-
-
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-css.jpg" class="card-img-top" alt="CSS">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-react.jpg" class="card-img-top" alt="React">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="row ">
-
-
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-node.jpg" class="card-img-top" alt="NodeJS">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mb-4">
-                                <div class="card">
-                                    <img src="assets/course-laravel.jpg" class="card-img-top" alt="Laravel">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-target="#caroseulTrending" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#caroseulTrending" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </button>
-            </div>
         </div>
 
     </main>
@@ -3138,6 +2805,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
