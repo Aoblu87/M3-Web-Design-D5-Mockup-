@@ -46,10 +46,23 @@ nav>.row>.col button {
     border: solid 2px white;
 }
 
+/* tolgo freccete da icona notifiche e user */
+/* icona user */
 body>header>nav>div.row.align-items-center>div>ul>li:nth-child(1)>a::after {
-    display: none;
-
+    visibility: hidden;
 }
+
+/* icona notifiche */
+body>header>nav>div>div.row.align-items-center>div>ul>li:nth-child(1)>a::after {
+    visibility: hidden;
+}
+
+/* sovrascrivo proprieta bootstrap per evitare l'overflow del dropdown delle notifche e use quandop cliccato */
+body > header > nav > div > div.row.align-items-center > div > ul > li.dropdown.show > div{
+    
+    position: absolute;
+}    
+
 
 /* JUMBOTRON */
 
@@ -276,9 +289,12 @@ body>header>nav>div.row.align-items-center>div>ul>li:nth-child(1)>a::after {
 }
 
 .favorites {
-    background-color: red;
+    background-image: url(assets/bookmark-fill.svg);
+    width: 100px;
+    height: 100px;
     opacity: 1;
-    transition: all ease-in-out;
+    background-color: red;
+    transition: all ease-out;
 }
 
 /* ESERCIZIO 2 */
