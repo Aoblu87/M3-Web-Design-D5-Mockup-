@@ -258,9 +258,9 @@ body > header > nav > div > div.row.align-items-center > div > ul > li.dropdown.
 
 /* ESERCIZI TRANSIZIONI */
 
-/* Esercizio !---------------------- */
+/* Esercizio 1---------------------- */
 
-.arousel-inner {
+.carousel-inner {
     overflow: visible;
 }
 
