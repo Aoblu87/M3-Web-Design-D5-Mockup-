@@ -3,93 +3,109 @@
     src: url();
 } */
 
-nav>.row>.col {
-    display: flex;
+nav > .row > .col {
+  display: flex;
 }
 
-nav>.row>.col button {
-    order: 3;
+nav > .row > .col button {
+  order: 3;
 }
 
 /* ----ICONA NOTIFICA E USER PSEUDO ELEMENTI */
 .notification::before {
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 27px;
-    width: 0.7rem;
-    height: 0.7rem;
-    border-radius: 50%;
-    background-color: #7650FE;
-    border: solid 2px white;
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 23px;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: #7650fe;
+  border: solid 2px white;
 }
 
 .notification {
-    background-color: #F5F4F8;
-    border-radius: 50%;
+  background-color: #f5f4f8;
+  border-radius: 50%;
 }
 
-
-.user>img {
-    width: 4.1em;
+.user > img {
+  width: 4.1em;
 }
 
 .user::after {
-    content: '';
-    position: absolute;
-    top: 35px;
-    left: 39px;
-    width: 0.6rem;
-    height: 0.6rem;
-    border-radius: 50%;
-    background-color: #19CB97;
-    border: solid 2px white;
+  content: '';
+  position: absolute;
+  top: 47px;
+  left: 43px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #19cb97;
+  border: solid 2px white;
 }
 
 /* tolgo freccete da icona notifiche e user */
 /* icona user */
-body>header>nav>div.row.align-items-center>div>ul>li:nth-child(1)>a::after {
-    visibility: hidden;
+body
+  > header
+  > nav
+  > div.row.align-items-center
+  > div
+  > ul
+  > li:nth-child(1)
+  > a::after {
+  visibility: hidden;
 }
 
 /* icona notifiche */
-body>header>nav>div>div.row.align-items-center>div>ul>li:nth-child(1)>a::after {
-    visibility: hidden;
+body
+  > header
+  > nav
+  > div
+  > div.row.align-items-center
+  > div
+  > ul
+  > li:nth-child(1)
+  > a::after {
+  visibility: hidden;
 }
 
 /* sovrascrivo proprieta bootstrap per evitare l'overflow del dropdown delle notifche e use quandop cliccato */
-body > header > nav > div > div.row.align-items-center > div > ul > li.dropdown.show > div{
-    
-    position: absolute;
-}    
-
+body
+  > header
+  > nav
+  > div
+  > div.row.align-items-center
+  > div
+  > ul
+  > li.dropdown.show
+  > div {
+  position: absolute;
+}
 
 /* JUMBOTRON */
 
 .jumbotron {
-    background-color: #7650FE;
-
+  background-color: #7650fe;
 }
 
-.jumbotron>.container>.row>.col h1 {
-    font-size: 2.2em;
+.jumbotron > .container > .row > .col h1 {
+  font-size: 2.2em;
 }
 
-.jumbotron>.container>.row>.col>.row>.col a {
-    font-size: 10pt;
-
+.jumbotron > .container > .row > .col > .row > .col a {
+  font-size: 10pt;
 }
 
 /* LIST GROUP */
 
-
 .icon-list {
-    background-color: #FFEFD9;
-    color: #C18165;
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-
+  background-color: #ffefd9;
+  color: #c18165;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /* .icon-list svg{
@@ -98,10 +114,8 @@ body > header > nav > div > div.row.align-items-center > div > ul > li.dropdown.
     left: 60px;
 } */
 
-
-
 .card-footer {
-    border-radius: 0%;
+  border-radius: 0%;
 }
 
 /* .list-group-item>.row>.col{
@@ -110,158 +124,131 @@ body > header > nav > div > div.row.align-items-center > div > ul > li.dropdown.
     height: 2%;
 } */
 
-
-
 .card {
-    border-radius: 0.70 rem;
+  border-radius: 0.7 rem;
 }
 
 /* -------------------Average CARDS Pseudo elements */
 
-
 .advance {
-
-    width: 3px;
-    height: 12px;
-    background-color: #7650FE;
-    border-radius: 10px;
-    position: absolute;
-    top: 6px;
-    left: -5px;
-
-
-
-
+  width: 3px;
+  height: 12px;
+  background-color: #7650fe;
+  border-radius: 10px;
+  position: absolute;
+  top: 6px;
+  left: -5px;
 }
 
 .advance::before {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 8px;
-    background-color: #7650FE;
-    border-radius: 10px;
-    top: 4px;
-    left: -5px;
-
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 8px;
+  background-color: #7650fe;
+  border-radius: 10px;
+  top: 4px;
+  left: -5px;
 }
 
 .advance::after {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 14px;
-    background-color: #7650FE;
-    border-radius: 10px;
-    top: -2px;
-    left: 5px;
-
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 14px;
+  background-color: #7650fe;
+  border-radius: 10px;
+  top: -2px;
+  left: 5px;
 }
 
 .intermediate {
-
-    width: 3px;
-    height: 12px;
-    background-color: #7650FE;
-    border-radius: 10px;
-    position: absolute;
-    top: 6px;
-    left: -5px;
-
-
-
-
+  width: 3px;
+  height: 12px;
+  background-color: #7650fe;
+  border-radius: 10px;
+  position: absolute;
+  top: 6px;
+  left: -5px;
 }
 
 .intermediate::before {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 8px;
-    background-color: #7650FE;
-    border-radius: 10px;
-    top: 4px;
-    left: -5px;
-
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 8px;
+  background-color: #7650fe;
+  border-radius: 10px;
+  top: 4px;
+  left: -5px;
 }
 
 .intermediate::after {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 14px;
-    background-color: #AFAABE;
-    border-radius: 10px;
-    top: -2px;
-    left: 5px;
-
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 14px;
+  background-color: #afaabe;
+  border-radius: 10px;
+  top: -2px;
+  left: 5px;
 }
 
 .beginner {
-
-    width: 3px;
-    height: 12px;
-    background-color: #AFAABE;
-    border-radius: 10px;
-    position: absolute;
-    top: 6px;
-    left: -5px;
-
-
-
-
+  width: 3px;
+  height: 12px;
+  background-color: #afaabe;
+  border-radius: 10px;
+  position: absolute;
+  top: 6px;
+  left: -5px;
 }
 
 .beginner::before {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 8px;
-    background-color: #7650FE;
-    border-radius: 10px;
-    top: 4px;
-    left: -5px;
-
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 8px;
+  background-color: #7650fe;
+  border-radius: 10px;
+  top: 4px;
+  left: -5px;
 }
 
 .beginner::after {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 14px;
-    background-color: #AFAABE;
-    border-radius: 10px;
-    top: -2px;
-    left: 5px;
-
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 14px;
+  background-color: #afaabe;
+  border-radius: 10px;
+  top: -2px;
+  left: 5px;
 }
-
 
 /*------------------ Carosello controls */
 
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='grey' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='grey' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-    top: 21px;
+  top: 21px;
 
-    bottom: -1014px;
-
+  bottom: -1014px;
 }
-
 
 /* ESERCIZI TRANSIZIONI */
 
 /* Esercizio 1---------------------- */
 
 .carousel-inner {
-    overflow: visible;
+  overflow: visible;
 }
 
 /* .save::before {
@@ -274,56 +261,48 @@ body > header > nav > div > div.row.align-items-center > div > ul > li.dropdown.
 
 
 } */
-.save>svg.bi.bi-bookmark-fill {
-    position: absolute;
-    inset: 5px 0 0 0;
+.save > svg.bi.bi-bookmark-fill {
+  position: absolute;
+  inset: 5px 0 0 0;
 }
-.save>svg.bi.bi-bookmark-fill:not(.favorites) {
-    opacity: 0;
+.save > svg.bi.bi-bookmark-fill:not(.favorites) {
+  opacity: 0;
 }
-
-
-
 
 /* rende visibile l'icona piena del booknark */
 .save:hover .bi.bi-bookmark-fill {
-    opacity: 1;
+  opacity: 1;
 }
 
 .favorites {
-    background-image: url(assets/bookmark-fill.svg);
-    opacity: 1;
-    transition: all ease-out;
+  background-image: url(assets/bookmark-fill.svg);
+  opacity: 1;
+  transition: all ease-out;
 }
 
 /* ESERCIZIO 2 */
 
 .carousel-item .card {
-    transform: scale(1);
-    transition: transform, 0.55s ease-in-out;
+  transform: scale(1);
+  transition: transform, 0.55s ease-in-out;
 }
 
 .carousel-item .card:hover {
-    transform: scale(1.02);
-    -webkit-box-shadow: 0px 0px 13px 1px rgba(NaN, 14, NaN, 1);
-    -moz-box-shadow: 0px 0px 13px 1px rgba(NaN, 14, NaN, 1);
-    box-shadow: 0px 0px 13px 1px rgba(150, 142, 150, 1);
-    cursor: pointer;
-
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 13px 1px rgba(NaN, 14, NaN, 1);
+  -moz-box-shadow: 0px 0px 13px 1px rgba(NaN, 14, NaN, 1);
+  box-shadow: 0px 0px 13px 1px rgba(150, 142, 150, 1);
+  cursor: pointer;
 }
 
 .carousel-inner:hover {
-
-    transition: transform, 0.75s ease-in-out;
-
+  transition: transform, 0.75s ease-in-out;
 }
 
 .carousel-inner {
-    overflow: visible;
+  overflow: visible;
 }
 
 .carousel-item:hover {
-
-    transition: transform, 0.75s ease-in-out;
-
+  transition: transform, 0.75s ease-in-out;
 }
