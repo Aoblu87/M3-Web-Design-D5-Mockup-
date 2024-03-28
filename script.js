@@ -1,28 +1,52 @@
-import courses from './courses.js';
-import icons from './icons.js';
+import courses from './data/courses.js';
+import icons from './data/icons.js';
 
 document.addEventListener('DOMContentLoaded', function () {
-  generateCards();
+  generateCards('.recommended-cards');
+  generateCards('.popular-cards');
+  generateCards('.trending-cards');
+
   changeBookmarkIcon();
 });
 
-function changeBookmarkIcon() {
-  const bookmarks = document.querySelectorAll('[data-target=favorites]');
-  const bookmarkFill = document.querySelectorAll('.bi-bookmark-fill');
-
-  for (const bookmark of bookmarks) {
-    bookmark.addEventListener('click', function (event) {
-      for (const fill of bookmarkFill) {
-        fill.classList.toggle('favorites');
-      }
-    });
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
+  return array;
 }
 
-function generateCards() {
-  const recommendedCardsContainer =
-    document.querySelector('#recommended-cards');
-  const coursesHTML = courses
+function generateRatingStars(rating) {
+  let ratingHTML = '';
+  for (let i = 0; i < 5; i++) {
+    ratingHTML +=
+      rating >= i + 1
+        ? icons.starFullSVG
+        : rating >= i + 0.5
+        ? icons.starHalfSVG
+        : icons.starSVG;
+  }
+  return ratingHTML;
+}
+function changeBookmarkIcon() {
+  const bookmarks = document.querySelectorAll('[data-target="favorites"]');
+
+  bookmarks.forEach((bookmark) => {
+    bookmark.addEventListener('click', function (event) {
+      const icon = bookmark.querySelector('.bi-bookmark-fill');
+
+      if (icon) {
+        icon.classList.toggle('favorites');
+      }
+    });
+  });
+}
+
+function generateCards(selector) {
+  const shuffledCourses = shuffleArray([...courses]);
+
+  const coursesHTML = shuffledCourses
     .map(
       (course, index) => ` <div class="col-6 mb-4">
         <div class="card" id=${index}>
@@ -43,7 +67,7 @@ function generateCards() {
             ${course.title}
             </h5>
             <div class="row">
-              <div class="col-6 d-flex align-items-center text-muted">
+              <div class="col-8 col-xl-6 d-flex align-items-center text-muted">
               ${icons.clockSVG}
                 <p class="card-text pl-1">2h 40m</p>
               </div>
@@ -56,15 +80,7 @@ function generateCards() {
               <div
                 class="col d-flex align-items-baseline text-warning"
               >
-              ${icons.starFullSVG}
-
-              ${icons.starFullSVG}
-
-
-              ${icons.starHalfSVG}
-
-              ${icons.starSVG}
-              ${icons.starSVG}
+              ${generateRatingStars(course.rating)}
           
                 <p class="mx-0 px-2">
                 ${course.rating}
@@ -126,6 +142,8 @@ function generateCards() {
       </div> `
     )
     .join('');
-  console.log(recommendedCardsContainer);
-  recommendedCardsContainer.innerHTML = coursesHTML;
+  const containers = document.querySelectorAll(selector);
+  for (const container of containers) {
+    container.innerHTML = coursesHTML;
+  }
 }
