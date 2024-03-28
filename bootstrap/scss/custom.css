@@ -1,235 +1,4 @@
 @charset "UTF-8";
-/* NAVBAR */
-/* ----ICONA NOTIFICA E USER PSEUDO ELEMENTI */
-.notification::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  left: 23px;
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 50%;
-  background-color: #7650fe;
-  border: solid 2px white;
-}
-
-.notification {
-  background-color: #f5f4f8;
-  border-radius: 50%;
-}
-
-.user > img {
-  width: 4.1em;
-}
-
-.user::after {
-  content: "";
-  position: absolute;
-  top: 47px;
-  left: 43px;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: #19cb97;
-  border: solid 2px white;
-}
-
-/* tolgo freccete da icona notifiche e user */
-/* icona user */
-.notification::after {
-  display: none;
-}
-
-.notification::before {
-  width: 1rem;
-  height: 1rem;
-  top: 15px;
-  left: 30px;
-}
-
-/* JUMBOTRON */
-.jumbotron {
-  background-color: #7650fe;
-}
-
-.jumbotron > .container > .row > .col h1, .jumbotron > .container > .row > .col .h1 {
-  font-size: 2.2em;
-}
-
-.jumbotron > .container > .row > .col > .row > .col a {
-  font-size: 10pt;
-}
-
-/* LIST GROUP */
-.icon-list {
-  background-color: #ffefd9;
-  color: #c18165;
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.card-footer {
-  border-radius: 0%;
-}
-
-.card {
-  border-radius: 0.7 rem;
-}
-
-/* -------------------Average CARDS Pseudo elements */
-.advance {
-  width: 3px;
-  height: 12px;
-  background-color: #7650fe;
-  border-radius: 10px;
-  position: absolute;
-  top: 6px;
-  left: -5px;
-}
-
-.advance::before {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 8px;
-  background-color: #7650fe;
-  border-radius: 10px;
-  top: 4px;
-  left: -5px;
-}
-
-.advance::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 14px;
-  background-color: #7650fe;
-  border-radius: 10px;
-  top: -2px;
-  left: 5px;
-}
-
-.intermediate {
-  width: 3px;
-  height: 12px;
-  background-color: #7650fe;
-  border-radius: 10px;
-  position: absolute;
-  top: 6px;
-  left: -5px;
-}
-
-.intermediate::before {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 8px;
-  background-color: #7650fe;
-  border-radius: 10px;
-  top: 4px;
-  left: -5px;
-}
-
-.intermediate::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 14px;
-  background-color: #afaabe;
-  border-radius: 10px;
-  top: -2px;
-  left: 5px;
-}
-
-.beginner {
-  width: 3px;
-  height: 12px;
-  background-color: #afaabe;
-  border-radius: 10px;
-  position: absolute;
-  top: 6px;
-  left: -5px;
-}
-
-.beginner::before {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 8px;
-  background-color: #7650fe;
-  border-radius: 10px;
-  top: 4px;
-  left: -5px;
-}
-
-.beginner::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 14px;
-  background-color: #afaabe;
-  border-radius: 10px;
-  top: -2px;
-  left: 5px;
-}
-
-/*------------------ Carosello controls */
-.carousel-inner {
-  overflow: visible;
-}
-
-.save > svg.bi.bi-bookmark-fill {
-  position: absolute;
-  inset: 5px 0 0 0;
-}
-
-.save > svg.bi.bi-bookmark-fill:not(.favorites) {
-  opacity: 0;
-}
-
-/* rende visibile l'icona piena del booknark */
-.save:hover .bi.bi-bookmark-fill {
-  opacity: 1;
-}
-
-.favorites {
-  background-image: url(assets/bookmark-fill.svg);
-  opacity: 1;
-  transition: all ease-out;
-}
-
-.carousel-item .card {
-  transform: scale(1);
-  transition: transform, 0.55s ease-in-out;
-}
-
-.carousel-item .card:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 0px 13px 1px rgb(150, 142, 150);
-  cursor: pointer;
-}
-
-.carousel-inner:hover {
-  transition: transform, 0.75s ease-in-out;
-}
-
-.carousel-inner {
-  overflow: visible;
-}
-
-.carousel-item:hover {
-  transition: transform, 0.75s ease-in-out;
-}
-
-@media only screen and (min-width: 768px) {
-  .carousel-control-prev {
-    left: -60px;
-  }
-  .carousel-control-next {
-    right: -130px;
-  }
-}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -6287,9 +6056,9 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 2%;
   padding: 0;
-  color: #fff;
+  color: #000;
   text-align: center;
   background: none;
   border: 0;
@@ -6305,7 +6074,7 @@ textarea.form-control-lg {
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -6330,11 +6099,11 @@ textarea.form-control-lg {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")*/;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")*/;
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")*/;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")*/;
 }
 
 .carousel-indicators {
@@ -6346,9 +6115,9 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-right: 15%;
+  margin-right: 2%;
   margin-bottom: 1rem;
-  margin-left: 15%;
+  margin-left: 2%;
 }
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
@@ -12195,4 +11964,4 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=custom.css.map */

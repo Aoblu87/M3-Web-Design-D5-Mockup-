@@ -1,0 +1,295 @@
+
+// COLORS
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+// CAROUSEL
+// $carousel-control-color:             $white;
+// $carousel-control-width:             5%;
+// $carousel-control-opacity:           .5;
+// $carousel-control-hover-opacity:     .9;
+// $carousel-control-transition:        opacity .15s ease;
+
+// $carousel-indicator-width:           30px;
+// $carousel-indicator-height:          3px;
+// $carousel-indicator-hit-area-height: 10px;
+// $carousel-indicator-spacer:          3px;
+// $carousel-indicator-opacity:         .5;
+// $carousel-indicator-active-bg:       $white;
+// $carousel-indicator-active-opacity:  1;
+// $carousel-indicator-transition:      opacity .6s ease;
+
+// $carousel-caption-width:             70%;
+// $carousel-caption-color:             $white;
+// $carousel-caption-padding-y:         1.25rem;
+// $carousel-caption-spacer:            1.25rem;
+
+// $carousel-control-icon-width:        2rem;
+
+// $carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+// $carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+// $carousel-transition-duration:       .6s;
+// $carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+/* NAVBAR */
+
+
+  
+  
+  
+  /* ----ICONA NOTIFICA E USER PSEUDO ELEMENTI */
+  .notification::before {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 23px;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #7650fe;
+    border: solid 2px white;
+  }
+  
+  .notification {
+    background-color: #f5f4f8;
+    border-radius: 50%;
+  }
+  
+  .user > img {
+    width: 4.1em;
+  }
+  
+  .user::after {
+    content: '';
+    position: absolute;
+    top: 47px;
+    left: 43px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #19cb97;
+    border: solid 2px white;
+  }
+  
+  /* tolgo freccete da icona notifiche e user */
+  /* icona user */
+  .notification::after {
+    display: none;
+  }
+  
+  .notification::before {
+    width: 1rem;
+    height: 1rem;
+    top: 15px;
+    left: 30px;
+  }
+  
+  /* JUMBOTRON */
+  
+  .jumbotron {
+    background-color: #7650fe;
+  }
+  
+  .jumbotron > .container > .row > .col h1 {
+    font-size: 2.2em;
+  }
+  
+  .jumbotron > .container > .row > .col > .row > .col a {
+    font-size: 10pt;
+  }
+  
+  /* LIST GROUP */
+  
+  .icon-list {
+    background-color: #ffefd9;
+    color: #c18165;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .card-footer {
+    border-radius: 0%;
+  }
+  
+  .card {
+    border-radius: 0.7 rem;
+  }
+  
+  /* -------------------Average CARDS Pseudo elements */
+  
+  .advance {
+    width: 3px;
+    height: 12px;
+    background-color: #7650fe;
+    border-radius: 10px;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+  }
+  
+  .advance::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background-color: #7650fe;
+    border-radius: 10px;
+    top: 4px;
+    left: -5px;
+  }
+  
+  .advance::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 14px;
+    background-color: #7650fe;
+    border-radius: 10px;
+    top: -2px;
+    left: 5px;
+  }
+  
+  .intermediate {
+    width: 3px;
+    height: 12px;
+    background-color: #7650fe;
+    border-radius: 10px;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+  }
+  
+  .intermediate::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background-color: #7650fe;
+    border-radius: 10px;
+    top: 4px;
+    left: -5px;
+  }
+  
+  .intermediate::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 14px;
+    background-color: #afaabe;
+    border-radius: 10px;
+    top: -2px;
+    left: 5px;
+  }
+  
+  .beginner {
+    width: 3px;
+    height: 12px;
+    background-color: #afaabe;
+    border-radius: 10px;
+    position: absolute;
+    top: 6px;
+    left: -5px;
+  }
+  
+  .beginner::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 8px;
+    background-color: #7650fe;
+    border-radius: 10px;
+    top: 4px;
+    left: -5px;
+  }
+  
+  .beginner::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 14px;
+    background-color: #afaabe;
+    border-radius: 10px;
+    top: -2px;
+    left: 5px;
+  }
+  
+  /*------------------ Carosello controls */
+//   .carousel-control-prev {
+//     left: -130px;
+//   }
+//   .carousel-control-next {
+//     right: -130px;
+//   }
+  
+  .carousel-inner {
+    overflow: visible;
+  }
+  
+  .save > svg.bi.bi-bookmark-fill {
+    position: absolute;
+    inset: 5px 0 0 0;
+  }
+  .save > svg.bi.bi-bookmark-fill:not(.favorites) {
+    opacity: 0;
+  }
+  
+  /* rende visibile l'icona piena del booknark */
+  .save:hover .bi.bi-bookmark-fill {
+    opacity: 1;
+  }
+  
+  .favorites {
+    background-image: url(assets/bookmark-fill.svg);
+    opacity: 1;
+    transition: all ease-out;
+  }
+  
+  .carousel-item .card {
+    transform: scale(1);
+    transition: transform, 0.55s ease-in-out;
+  }
+  
+  .carousel-item .card:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(239, 235, 235, 1);
+    -moz-box-shadow: 0px 0px 13px 1px rgba(239, 235, 235, 1);
+    box-shadow: 0px 0px 13px 1px rgba(150, 142, 150, 1);
+    cursor: pointer;
+  }
+  
+  .carousel-inner:hover {
+    transition: transform, 0.75s ease-in-out;
+  }
+  
+  .carousel-inner {
+    overflow: visible;
+  }
+  
+  .carousel-item:hover {
+    transition: transform, 0.75s ease-in-out;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .carousel-control-prev {
+      left: -60px;
+    }
+    .carousel-control-next {
+      right: -130px;
+    }
+  }
+  
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
+
