@@ -10,7 +10,7 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
 
   <body class="bg-light">
@@ -41,8 +41,11 @@
             </button>
           </div>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+          <div
+            class="collapse col-xl-10 navbar-collapse justify-content-xl-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
               <li class="dropdown">
                 <a
                   class="btn btn-white dropdown-toggle"
@@ -114,10 +117,12 @@
             </ul>
           </div>
           <div
-            class="col-6 align-items-center m-0 p-0"
+            class="col-6 col-xl-2 align-items-center m-0 p-0"
             style="position: relative; order: 1"
           >
-            <ul class="navbar-nav mr-auto flex-row align-items-center">
+            <ul
+              class="navbar-nav mr-auto flex-row justify-content-xl-end align-items-center"
+            >
               <li class="dropdown" style="border-radius: 50px">
                 <a
                   class="notification d-flex align-items-center justify-content-center btn btn-light dropdown-toggle"
@@ -179,140 +184,139 @@
 
     <main>
       <!----------------------- JUMBOTRON----------------- -->
-      <div class="row no-gutters justify-content-xl-center">
-        <div class="jumbotron jumbotron-fluid m-0 p-0">
-          <div class="col m-0 p-5">
-            <h1 class="display-5 font-weight-bold text-white mt-5">
-              Welcome Web Students!
-            </h1>
-            <p class="lead text-white-50">
-              Hand-picked Instructor and expertly crafted courses, designed for
-              the modern students and entrepreneur.
-            </p>
-            <div class="col mt-4">
-              <a
-                class="btn btn-success btn-lg font-weight-bold"
-                href="#"
-                role="button"
-                >Browse Courses</a
+      <div class="container">
+        <div class="row no-gutters justify-content-xl-center">
+          <div
+            class="jumbotron jumbotron-fluid d-flex flex-column flex-lg-row flex-wrap"
+          >
+            <div class="col col-xl-6 d-flex flex-column m-0 p-3">
+              <h1 class="display-5 font-weight-bold text-white mt-5">
+                Welcome Web Students!
+              </h1>
+              <p class="lead text-white-50">
+                Hand-picked Instructor and expertly crafted courses, designed
+                for the modern students and entrepreneur.
+              </p>
+              <div
+                class="col col-xl-5 d-flex flex-wrap flex-xl-nowrap mt-4 p-0"
               >
-
-              <a
-                class="btn btn-light btn-lg font-weight-bold"
-                href="#"
-                role="button"
-                >Are You Instructor?</a
-              >
+                <div class="mb-2 col-12 p-0">
+                  <a
+                    class="btn btn-success btn-lg font-weight-bold"
+                    href="#"
+                    role="button"
+                    >Browse Courses</a
+                  >
+                </div>
+                <div class="col-12 p-0">
+                  <a
+                    class="btn btn-light btn-lg font-weight-bold"
+                    href="#"
+                    role="button"
+                    >Are You Instructor?</a
+                  >
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col d-flex justify-content-xl-end">
-            <img class="img-fluid" src="assets/hero-img.png" alt="" />
+            <div class="col col-xl-12 d-flex justify-content-xl-end">
+              <img class="img-fluid" src="assets/hero-img.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
 
       <!------------------- LIST group--------------- -->
-
-      <div
-        class="row d-flex align-items-center bg-white border-bottom no-gutters"
-      >
-        <div class="col">
-          <ul class="list-group list-group-horizontal-md">
-            <div class="container">
-              <div class="row">
-                <li
-                  class="col-4 d-flex justify-content-center list-group-item list-group-flush border-0"
+      <div class="container">
+        <div
+          class="row d-flex align-items-center justify-content-xl-center border-bottom no-gutters p-2"
+          style="background-color: white"
+        >
+          <ul class="d-flex flex-column flex-xl-row p-0 m-0">
+            <li
+              class="col-12 col-xl-4 d-flex justify-content-center align-items-center list-group-item list-group-flush border-0 px-xl-5 p-0 m-0"
+            >
+              <div
+                class="icon-list d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-camera-video"
+                  viewBox="0 0 16 16"
                 >
-                  <div class="row">
-                    <div class="icon-list col-0 px-3 m-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-camera-video"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="col">
-                      <p class="list-text display-5 m-0 p-0">
-                        30,000 online courses
-                      </p>
-                      <p class="text-muted m-0 p-0">
-                        Enjoy a variety of fresh topics
-                      </p>
-                    </div>
-                  </div>
-                </li>
-
-                <li
-                  class="col-4 d-flex justify-content-center list-group-item list-group-flush border-0"
-                >
-                  <div class="row">
-                    <div
-                      class="icon-list col-0 px-3 m-2"
-                      style="background-color: #ffefd9"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-people"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="col">
-                      <p class="list-text display-5 m-0 p-0">
-                        Expert Instruction
-                      </p>
-                      <p class="text-muted m-0 p-0">
-                        Find the rigth instructor for you
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li
-                  class="col-4 d-flex justify-content-center list-group-item list-group-flush border-0"
-                >
-                  <div class="row">
-                    <div class="icon-list col-0 px-3 m-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-clock"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                        />
-                        <path
-                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="col">
-                      <p class="list-text display-5 m-0 p-0">Lifetime access</p>
-                      <p class="text-muted m-0 p-0">Learn on your schedule</p>
-                    </div>
-                  </div>
-                </li>
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"
+                  />
+                </svg>
               </div>
-            </div>
+              <div class="col">
+                <p class="list-text display-5 m-0 p-0">30,000 online courses</p>
+                <p class="text-muted m-0 p-0">
+                  Enjoy a variety of fresh topics
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="col-12 col-xl-4 d-flex justify-content-center align-items-center list-group-item list-group-flush border-0 px-xl-5 p-0 m-0"
+            >
+              <div
+                class="icon-list d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-people"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
+                  />
+                </svg>
+              </div>
+              <div class="col">
+                <p class="list-text display-5 m-0 p-0">Expert Instruction</p>
+                <p class="text-muted m-0 p-0">
+                  Find the rigth instructor for you
+                </p>
+              </div>
+            </li>
+            <li
+              class="col-12 col-xl-4 d-flex justify-content-center align-items-center list-group-item list-group-flush border-0 px-xl-5 p-0 m-0"
+            >
+              <div
+                class="icon-list d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-clock"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  />
+                </svg>
+              </div>
+              <div class="col">
+                <p class="list-text display-5 m-0 p-0">Lifetime access</p>
+                <p class="text-muted m-0 p-0">Learn on your schedule</p>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
+
       <!-- ----------------------RECOMMENDED SECTION---------------- -->
 
       <!-- Heading -->
@@ -329,6 +333,27 @@
           class="carousel slide"
           data-interval="false"
         >
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#caroseulRecommended"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon text-dark"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#caroseulRecommended"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row row-cols-1 row-cols-md-4">
@@ -1614,24 +1639,6 @@
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-target="#caroseulRecommended"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-target="#caroseulRecommended"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </button>
       </div>
 
       <!-- ----------------------POPULAR SECTION---------------- -->
