@@ -1,6 +1,6 @@
 # Web Development Courses App 🌐🎓
 
-Welcome to the official repository of our **Web Development Courses App**, a project born out of the Web Design module of the Epicode course. This app is designed to mirror a provided mockup closely, showcasing our ability to translate visual designs into functional web applications.
+**Web Development Courses App**, a project born out of the Web Design module of the Epicode course. This app is designed to mirror a provided mockup closely, showcasing our ability to translate visual designs into functional web applications.
 
 ## About This Project 📖
 
@@ -20,7 +20,6 @@ These libraries ensure a seamless and dynamic user experience, making learning m
 
 - Responsive design that adapts to various device screens.
 - Interactive animations using GSAP for an engaging user experience.
-- Course catalog with a variety of web development topics.
 
 
 ![127 0 0 1_5502_index html](https://github.com/Aoblu87/mockup-courses-static-app/assets/126720391/f9de1977-2374-4900-bf8f-bc73da4ef344)
