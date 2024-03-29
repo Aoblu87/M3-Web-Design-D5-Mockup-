@@ -23,4 +23,5 @@ These libraries ensure a seamless and dynamic user experience, making learning m
 
 
 ![127 0 0 1_5502_index html](https://github.com/Aoblu87/mockup-courses-static-app/assets/126720391/f9de1977-2374-4900-bf8f-bc73da4ef344)
-![127 0 0 1_5502_(iPhone 14 Pro Max)](https://github.com/Aoblu87/web-dev-courses-app-epicode-project/assets/126720391/ca7f86e3-5f5f-4b49-9e20-3cd6f313c950)
+<img src="![127 0 0 1_5502_(iPhone 14 Pro Max)](https://github.com/Aoblu87/web-dev-courses-app-epicode-project/assets/126720391/ca7f86e3-5f5f-4b49-9e20-3cd6f313c950)" width="250" height="250">
+
