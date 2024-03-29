@@ -18,7 +18,7 @@
       <!-------------------------- NAVBAR----------------------- -->
 
       <nav
-        class="container navbar d-flex navbar-expand-lg navbar-light bg-light"
+        class="container navbar d-flex navbar-expand-lg navbar-light position-relative bg-light"
       >
         <!-- <div class="row m-0 p-0"> -->
         <div class="col-2 d-flex align-content-center">
@@ -26,13 +26,24 @@
             ><img src="assets/logo.svg" alt="logo"
           /></a>
         </div>
+        <div
+          class="collapse col-12 justify-content-end position-absolute top-100 p-2"
+          id="navbarSupportedContent"
+        >
+          <ul class="col-4 d-flex flex-column border border-2 rounded p-2 m-0">
+            <li class="col d-flex justify-content-start p-0 m-0">
+              Notifications
+            </li>
+            <li class="col d-flex justify-content-start p-0 m-0">Account</li>
+          </ul>
+        </div>
         <div class="col d-flex justify-content-end p-0">
           <div class="align-content-center ml-0" style="order: 3">
             <button
               class="navbar-toggler"
               type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
@@ -42,8 +53,7 @@
           </div>
 
           <div
-            class="collapse col-xl-10 navbar-collapse justify-content-xl-end"
-            id="navbarSupportedContent"
+            class="col-md-10 d-none d-lg-inline-flex navbar-collapse justify-content-md-end"
           >
             <ul class="navbar-nav">
               <li class="dropdown">
@@ -115,70 +125,69 @@
                 </div>
               </li>
             </ul>
-          </div>
-          <div
-            class="col-6 col-xl-2 align-items-center m-0 p-0"
-            style="position: relative; order: 1"
-          >
-            <ul
-              class="navbar-nav mr-auto flex-row justify-content-xl-end align-items-center"
+            <div
+              class="col-6 col-md-2 d-none d-md-inline-flex align-items-center m-0 p-0"
+              style="position: relative; order: 1"
             >
-              <li class="dropdown" style="border-radius: 50px">
-                <a
-                  class="notification d-flex align-items-center justify-content-center btn btn-light dropdown-toggle"
-                  style="width: 3.5rem; height: 3.5rem"
-                  href="#"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                  style="color: #afaabe"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-bell"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
-                    />
-                  </svg>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
+              <ul
+                class="navbar-nav mr-auto flex-column flex-md-row justify-content-md-end align-items-center"
+              >
+                <li class="dropdown" style="border-radius: 50px">
+                  <a
+                    class="notification d-flex align-items-center justify-content-center btn btn-light dropdown-toggle"
+                    style="width: 3.5rem; height: 3.5rem"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: #afaabe"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-bell"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+                      />
+                    </svg>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
 
-              <li class="dropdown">
-                <a
-                  class="user btn rounded-circle dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img
-                    class="rounded-circle"
-                    src="assets/avatar-1.jpg"
-                    alt="utente"
-                    style="width: 3.3em"
-                  />
-                </a>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
+                <li class="dropdown">
+                  <a
+                    class="user btn rounded-circle dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      class="rounded-circle"
+                      src="assets/avatar-1.jpg"
+                      alt="utente"
+                      style="width: 3.3em"
+                    />
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <!-- </div> -->
       </nav>
     </header>
 
@@ -231,9 +240,11 @@
           class="row d-flex align-items-center justify-content-xl-center border-bottom no-gutters p-3"
           style="background-color: white"
         >
-          <ul class="d-flex flex-column flex-xl-row p-0 m-0">
+          <ul
+            class="d-flex flex-column flex-md-row flex-xl-row justify-content-xl-start justify-content-center p-0 m-0"
+          >
             <li
-              class="col-12 col-xl-4 d-flex justify-content-center align-items-center list-group-item list-group-flush border-0 px-xl-5 p-0 m-0 my-xl-3"
+              class="col-12 col-md-3 col-xl-3 d-flex justify-content-center align-items-center list-group-item list-group-flush border-0 px-xl-2 p-0 mx-md-3 my-xl-3"
             >
               <div
                 class="icon-list d-flex align-items-center justify-content-center"
@@ -261,7 +272,7 @@
             </li>
 
             <li
-              class="col-12 col-xl-4 d-flex justify-content-center align-items-center list-group-item list-group-flush border-0 px-xl-5 p-0 m-0 my-xl-3"
+              class="col-12 col-md-3 col-xl-3 d-flex justify-content-center align-items-center list-group-item list-group-flush border-0 px-xl-2 p-0 mx-md-3 my-xl-3"
             >
               <div
                 class="icon-list d-flex align-items-center justify-content-center"
@@ -287,7 +298,7 @@
               </div>
             </li>
             <li
-              class="col-12 col-xl-4 d-flex justify-content-center align-items-center list-group-item list-group-flush border-0 px-xl-5 p-0 m-0 my-xl-3"
+              class="col-12 col-md-3 col-xl-3 d-flex justify-content-center align-items-center list-group-item list-group-flush border-0 px-xl-2 p-0 mx-md-3 my-xl-3"
             >
               <div
                 class="icon-list d-flex align-items-center justify-content-center"
@@ -333,7 +344,7 @@
           data-interval="false"
         >
           <button
-            class="carousel-control-prev"
+            class="carousel-control-prev d-none d-xl-inline-flex"
             style="left: -70px"
             type="button"
             data-bs-target="#caroseulRecommended"
@@ -346,8 +357,8 @@
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
-            style="right: -70px"
+            class="carousel-control-next d-none d-xl-inline-flex"
+            style="left: 1130px"
             type="button"
             data-bs-target="#caroseulRecommended"
             data-bs-slide="next"
@@ -357,11 +368,6 @@
           </button>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div
-                class="recommended-cards row row-cols-1 row-cols-md-4 flex-nowrap"
-              ></div>
-            </div>
-            <div class="carousel-item">
               <div
                 class="recommended-cards row row-cols-1 row-cols-md-4 flex-nowrap"
               ></div>
@@ -383,7 +389,7 @@
         <!-- Carousel desktop-->
         <div id="carousel-popular" class="carousel slide" data-interval="false">
           <button
-            class="carousel-control-prev"
+            class="carousel-control-prev d-none d-xl-inline-flex"
             style="left: -70px"
             type="button"
             data-bs-target="#caroseulRecommended"
@@ -396,8 +402,8 @@
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
-            style="right: -70px"
+            class="carousel-control-next d-none d-xl-inline-flex"
+            style="left: 1130px"
             type="button"
             data-bs-target="#caroseulRecommended"
             data-bs-slide="next"
@@ -407,11 +413,6 @@
           </button>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div
-                class="popular-cards row row-cols-1 row-cols-md-4 flex-nowrap"
-              ></div>
-            </div>
-            <div class="carousel-item">
               <div
                 class="popular-cards row row-cols-1 row-cols-md-4 flex-nowrap"
               ></div>
@@ -433,7 +434,7 @@
         <!-- Carousel desktop-->
         <div id="caroseulTrending" class="carousel slide" data-interval="false">
           <button
-            class="carousel-control-prev"
+            class="carousel-control-prev d-none d-xl-inline-flex"
             style="left: -70px"
             type="button"
             data-bs-target="#caroseulRecommended"
@@ -446,8 +447,8 @@
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
-            style="right: -70px"
+            class="carousel-control-next d-none d-xl-inline-flex"
+            style="left: 1130px"
             type="button"
             data-bs-target="#caroseulRecommended"
             data-bs-slide="next"
@@ -487,10 +488,6 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="./data/courses.js"></script>
-    <script type="module" src="./data/icons.js"></script>
-
-    <script type="module" src="script.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -502,5 +499,13 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script type="module" src="./data/courses.js"></script>
+    <script type="module" src="./data/icons.js"></script>
+    <script type="module" src="./script/carousel.js"></script>
+
+    <script type="module" src="./script/script.js"></script>
   </body>
 </html>

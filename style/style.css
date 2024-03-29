@@ -173,6 +173,12 @@
 }
 
 /*------------------ Carosello controls */
+.carousel-control-prev,
+.carousel-control-next {
+  right: -70px;
+  left: 70px;
+}
+
 .save > svg.bi.bi-bookmark-fill {
   position: absolute;
   inset: 5px 0 0 0;
@@ -193,6 +199,10 @@
   transition: all ease-out;
 }
 
+.carousel-item {
+  width: 85%;
+}
+
 .carousel-item .card {
   transform: scale(1);
   transition: transform, 0.55s ease-in-out;
@@ -208,6 +218,21 @@
   transition: transform, 0.75s ease-in-out;
 }
 
+@media only screen and (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    right: 0px;
+    left: 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .carousel-item {
+    width: 88%;
+  }
+  #navbarSupportedContent {
+    display: none;
+  }
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

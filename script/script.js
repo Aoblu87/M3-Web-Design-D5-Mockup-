@@ -1,5 +1,5 @@
-import courses from './data/courses.js';
-import icons from './data/icons.js';
+import courses from '../data/courses.js';
+import icons from '../data/icons.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   generateCards('.recommended-cards');
@@ -48,7 +48,7 @@ function generateCards(selector) {
 
   const coursesHTML = shuffledCourses
     .map(
-      (course, index) => ` <div class="col-6 mb-4">
+      (course, index) => ` <div class="box col-6 mb-4">
         <div class="card" id=${index}>
           <img
             src="${course.image}"
@@ -146,4 +146,6 @@ function generateCards(selector) {
   for (const container of containers) {
     container.innerHTML = coursesHTML;
   }
+  // Trigger dell'evento personalizzato 'destinationsRendered' una volta terminato il rendering
+  window.dispatchEvent(new CustomEvent('cardsRendered'));
 }

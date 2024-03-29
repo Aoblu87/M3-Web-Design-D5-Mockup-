@@ -226,7 +226,11 @@ $carousel-transition:                transform $carousel-transition-duration eas
   }
   
   /*------------------ Carosello controls */
-
+  .carousel-control-prev,
+  .carousel-control-next{
+    right: -70px;
+    left:70px;
+  }
   
   
   
@@ -248,6 +252,9 @@ $carousel-transition:                transform $carousel-transition-duration eas
     opacity: 1;
     transition: all ease-out;
   }
+  .carousel-item{
+    width: 85%;
+  }
   
   .carousel-item .card {
     transform: scale(1);
@@ -267,9 +274,24 @@ $carousel-transition:                transform $carousel-transition-duration eas
   }
   
   
-
+@media only screen and  (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next{
+      right: 0px;
+      left:0px;
+    }
+   
+    
+}
   
-  
+  @media only screen and (min-width: 768px) {
+    .carousel-item{
+      width: 88%;
+    }
+    #navbarSupportedContent{
+      display: none;
+    }
+  }
 
 
 
